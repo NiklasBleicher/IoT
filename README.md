@@ -4,4 +4,4 @@
 
 # Grobkonzept
 
-[PDF Grobkonzept](https://github.com/NiklasBleicher/IoT/blob/main/Files/Grobkonzept.pdf)
+[PDF Grobkonzept](https://github.com/NiklasBleicher/IoT/blob/main/Files/HighHeros_Grobentwurf.pdf)
