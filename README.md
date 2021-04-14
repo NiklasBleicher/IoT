@@ -25,13 +25,10 @@
 # Webapp
 
 ### Homescreen (öffnet beim Scannen des QR-Codes):
-
-
+![Homescreen](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/Webapp.png) 
 ### Start-Screen:
-
-
+![Homescreen](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/Start.png) 
 ### Overview:
-
-
+![Homescreen](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/Overview.png) 
 ### Challenge Overview:
-
+![Homescreen](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/Challenge%20Overview.png) 
