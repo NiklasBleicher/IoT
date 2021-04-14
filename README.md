@@ -13,12 +13,25 @@
 
 # Click-Dummy
 
-Easy-Mode:
+## Easy-Mode:
 ![Easy-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/easy.gif)
 
-Medium-Mode:
+## Medium-Mode:
 ![Medium-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/medium.gif)
 
-Hard-Mode:
+## Hard-Mode:
 ![Hard-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/hard.gif) 
+
+# Webapp
+
+### Homescreen (öffnet beim Scannen des QR-Codes):
+
+
+### Start-Screen:
+
+
+### Overview:
+
+
+### Challenge Overview:
 
