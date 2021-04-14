@@ -13,7 +13,12 @@
 
 # Click-Dummy
 
-[Easy-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/easy.gif)
-[Medium-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/medium.gif)
-[Hard-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/hard.gif) 
+Easy-Mode:
+![Easy-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/easy.gif)
+
+Medium-Mode:
+![Medium-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/medium.gif)
+
+Hard-Mode:
+![Hard-Mode](https://github.com/NiklasBleicher/IoT/blob/main/Files/GUI-Prototyp/hard.gif) 
 
