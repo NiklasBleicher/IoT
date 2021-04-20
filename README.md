@@ -1,3 +1,16 @@
+# Grober Schaltplan
+[Schaltplan](https://github.com/NiklasBleicher/IoT/blob/main/Files/Schaltplan.png)
+
+# Bauteilliste:
+- min. 12 LEDs
+- Breadboard
+- Platinen zur Gruppierung von LEDs
+- 3 Buttons (Green, Yellow, Red)
+- 1 x 4bit Dispay
+- ?x Wiederstände 
+- Jumper Kabel min. 12
+
+
 # Grobkonzept
 
 [PDF Grobkonzept](https://github.com/NiklasBleicher/IoT/blob/main/Files/HighHeros_Grobentwurf.pdf)
