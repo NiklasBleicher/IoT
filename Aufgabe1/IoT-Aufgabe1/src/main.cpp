@@ -2,6 +2,8 @@
 #include <WiFi.h>
 #include <WebServer.h>
 #include "webapp.h"
+#include "easy.h"
+#include "medium.h"
 
 const int LEDEasy = 21;
 const int LEDMedium = 0;
@@ -13,11 +15,32 @@ const int touch2 = 2;
 const char* ssid = "Test_Access-Point";
 const char* password = "test";
 
+//Set HTML Content
+String html = webappIndex;
+String easy_button = easy;
+String medium_button = medium;
+
 WebServer server(80);
 
+//Global Bool to Check Button State
+bool calledEasy = false;
+bool calledMedium = false;
+bool calledFalse = false;
+
 void handleRoot(){
-    String html = webappIndex;
     server.send(200, "text/html", html);
+}
+
+void handleEasy(){
+  server.send(200, "text/html", easy_button);
+}
+
+void handleMedium(){
+  server.send(200, "text/html", medium_button);
+}
+
+void handleHard(){
+
 }
 
 void setup() {
@@ -33,7 +56,7 @@ void setup() {
   WiFi.softAP(ssid, password);
   String html = webappIndex;
   server.on("/", handleRoot);
-
+  
   //Get IP
   IPAddress IP = WiFi.softAPIP();
   Serial.println("IP-Adress");
@@ -46,8 +69,20 @@ void loop() {
   server.handleClient();
 
   //Change Hosted Page when Button pressed
+  int state1 = digitalRead(touch1);
+  if(state1 == 1 && calledEasy == false){
+    Serial.println("Medium Pin Touched");
+    calledEasy = true;
+    handleEasy();
+    //Light Up Easy-LEDs (Group)
+  }
 
-    
+  int state2 = digitalRead(touch2);
+  if(state2 == 1 && calledMedium == false){
+    Serial.println("Medium Pin Touched");
+    calledMedium = true;
+    handleMedium();
+  }
   /*Touch Sensor Test
   Serial.println(digitalRead(touch0));
   if(digitalRead(touch0) == 1){
