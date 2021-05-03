@@ -26,7 +26,7 @@ WebServer server(80);
 bool calledEasy = false;
 bool calledMedium = false;
 bool calledFalse = false;
-
+String handlerCheck = "";
 void handleRoot(){
     server.send(200, "text/html", html);
 }
@@ -41,6 +41,13 @@ void handleMedium(){
 
 void handleHard(){
 
+}
+
+bool handleLevel(String state){
+  
+  if(state == "easy"){
+    return true;
+  }
 }
 
 void setup() {
@@ -73,16 +80,12 @@ void loop() {
   if(state1 == 1 && calledEasy == false){
     Serial.println("Medium Pin Touched");
     calledEasy = true;
+    handleLevel("easy");
     handleEasy();
     //Light Up Easy-LEDs (Group)
   }
+  
 
-  int state2 = digitalRead(touch2);
-  if(state2 == 1 && calledMedium == false){
-    Serial.println("Medium Pin Touched");
-    calledMedium = true;
-    handleMedium();
-  }
   /*Touch Sensor Test
   Serial.println(digitalRead(touch0));
   if(digitalRead(touch0) == 1){
